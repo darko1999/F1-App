@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+      <img
+        src="https://hips.hearstapps.com/autoweek/assets/s3fs-public/DPkZATWXUAAnsCz.jpg"
+      />
+      <h3>Large F1 Database</h3>
+      </div>
+      <nav>
+        <ul>
+          <li><button id="tab-1" class="tab-item tab-border">Seasons</button></li>
+          <li><button id="tab-2" class="tab-item">Tracks</button></li>
+          <li><button id="tab-3" class="tab-item">Teams</button></li>
+          <li><button id="tab-4" class="tab-item">Drivers</button></li>
+        </ul>
+      </nav>
+    </header>
+        <div id="tab-1-content" class="show tab-content-item"><div id="t1"></div></div>
+    <div id="tab-2-content" class="tab-content-item">
+      <button class="track-sort tab-border" id="track-asc" onclick="sortTracks('asc')">Ascending</button>
+      <button class="track-sort" id="track-desc" onclick="sortTracks('desc')">Descending</button>
+      <div id="tracks"></div>
+    </div>
+    <div id="tab-3-content" class="tab-content-item">
+      <div class="custom-select">
+      <select
+        id="aa"
+        autocomplete="off"
+        onchange="sortTeamNat(this.value)"
+      >
+        <option value="default" selected>All Nations</option>
+      </select>
+      <span class="custom-arrow"></span>
+    </div>
+      <div id="teams"></div>
+    </div>
+    <div id="tab-4-content" class="tab-content-item">
+      <input type="text" id="search-term"/></label>
+      <select name="" id="driverAge" autocomplete="off" onchange="sortDriversAge(this.value)">
+      <option value="default" selected disabled>Choose here</option>
+      <option value="asc">Ascending</option>
+      <option value="desc">Descending</option>
+      <option value="old">Oldest</option>
+      <option value="young">Youngest</option></select>
+      <table id="drivers">
+        <tr>
+          <th>Name</th>
+          <th>Surname</th>
+          <th>DOB</th>
+        </tr>
+      </table>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>

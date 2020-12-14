@@ -1,0 +1,450 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  background-color: lightgray;
+}
+body {
+  margin-top: 3rem;
+}
+
+h3 {
+  background-color: white;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  height: 8rem;
+  margin: auto;
+  background-color: black;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+  min-height: 8rem;
+  width: 70%;
+  min-width: 70%;
+  position: static;
+  overflow: hidden;
+  box-shadow: -10px 10px 30px, 10px 10px 30px;
+}
+
+header div {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+}
+
+header .header h3 {
+  color: white;
+  background-color: transparent;
+  white-space: nowrap;
+}
+
+header button {
+  background-color: gray;
+  color: white;
+  width: 8rem;
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+header img {
+  width: 15vh;
+  height: 10vh;
+  object-fit: fill;
+  margin-left: 10%;
+  float: left;
+  min-width: 8rem;
+  min-height: 6rem;
+}
+
+nav {
+  background-color: black;
+  max-width: 70%;
+  margin-left: 5%;
+}
+
+nav ul {
+  background-color: black;
+  border-top-right-radius: 50px;
+  float: right;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline;
+  background-color: black;
+}
+
+.tab-content-item {
+  display: none;
+}
+
+.show {
+  display: block;
+  opacity: 1;
+  transition: all 1000 ease-in;
+}
+
+#tab-1-content {
+  box-shadow: -10px 0 30px, 10px 0 30px;
+  width: 70%;
+  min-width: 70%;
+  margin: auto;
+  margin-bottom: 3rem;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+#t1 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  background: linear-gradient(to bottom right, black, rgba(50, 42, 42, 1));
+
+  margin: auto;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+#t1 div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15vh;
+  height: 3rem;
+  margin-top: 2rem;
+  margin-left: 2vh;
+  color: orange;
+  text-align: center;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+#t1 div:hover {
+  color: red;
+}
+
+#tab-2-content {
+  box-shadow: -10px 0 30px, 10px 0 30px;
+  width: 70%;
+  min-width: 70%;
+  margin: auto;
+  margin-bottom: 3rem;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  background: linear-gradient(to bottom right, black, rgba(50, 42, 42, 1));
+}
+
+.track-sort {
+  background-color: gray;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  margin-left: 1vh;
+  width: 6.5rem;
+  margin-top: 1.5rem;
+}
+
+.tab-border {
+  background-color: rgba(255, 0, 0, 0.541);
+  border: none;
+  text-transform: uppercase;
+}
+
+#tracks {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  background: linear-gradient(to bottom right, black, rgba(50, 42, 42, 1));
+
+  margin: auto;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+#tracks div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 13vh;
+  height: 3rem;
+  word-wrap: break-word;
+  margin-top: 2rem;
+  margin-left: 2vh;
+  color: orange;
+  text-align: center;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+#tab-3-content {
+  box-shadow: -10px 0 30px, 10px 0 30px;
+  width: 70%;
+  min-width: 70%;
+  margin: auto;
+  padding-top: 1rem;
+  margin-bottom: 3rem;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  background: linear-gradient(to bottom right, black, rgba(50, 42, 42, 1));
+}
+#teams {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  background-color: transparent;
+}
+
+#teams div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 13vh;
+  height: 3rem;
+  margin-top: 2rem;
+  background-color: transparent;
+  color: orange;
+  text-align: center;
+  cursor: pointer;
+  font-size: 12px;
+  flex-wrap: nowrap;
+  margin-left: 2vh;
+  margin-right: 2vh;
+  margin-bottom: 2rem;
+}
+#teams img {
+  width: 2rem;
+  height: 1rem;
+  object-fit: fill;
+  margin-top: 2rem;
+}
+
+.custom-select {
+  position: relative;
+  width: 9.3rem;
+  margin-left: 3vh;
+  background-color: transparent;
+}
+
+.custom-select select {
+  border: none;
+  background-color: gray;
+  color: white;
+  font-size: 0.9rem;
+  padding: 0.5rem 2rem 0.5rem 0.5rem;
+  border: 0;
+}
+
+.custom-select select option {
+  background: gray;
+}
+
+.custom-arrow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  background: gray;
+  height: 100%;
+  width: 1rem;
+  pointer-events: none;
+}
+
+.custom-arrow::before,
+.custom-arrow::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.custom-arrow::before {
+  border-left: 0.5rem solid transparent;
+  border-right: 0.5rem solid transparent;
+  border-bottom: 0.5rem solid rgba(255, 0, 0, 0.541);
+  top: 30%;
+}
+
+.custom-arrow::after {
+  border-left: 0.5rem solid transparent;
+  border-right: 0.5rem solid transparent;
+  border-top: 0.5rem solid rgba(255, 0, 0, 0.541);
+  top: 70%;
+}
+
+#tab-4-content {
+  box-shadow: -10px 0 30px, 10px 0 30px;
+  width: 70%;
+  min-width: 70%;
+  margin: auto;
+  padding-top: 1rem;
+  margin-bottom: 3rem;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  background: linear-gradient(to bottom right, black, rgba(50, 42, 42, 1));
+  overflow: hidden;
+  padding-left: 10vh;
+}
+
+#tab-4-content table {
+  background-color: grey;
+  margin-top: 2rem;
+}
+
+#tab-4-content table tr {
+  text-align: center;
+}
+#tab-4-content table tr td {
+  width: 10rem;
+  color: black;
+}
+
+#drivers td {
+  color: white;
+}
+
+.stand {
+  background-color: white;
+  margin: 0 15rem;
+  padding-top: 3rem;
+  display: flex;
+  justify-content: center;
+  min-width: 70%;
+}
+
+.stand table {
+  border: solid grey;
+}
+
+#standings1 img {
+  width: 2rem;
+  height: 1rem;
+  object-fit: fill;
+}
+
+#standings1 tr th,
+#standings2 tr th {
+  background-color: white;
+}
+
+#standings1 tr td,
+#standings2 tr td {
+  background-color: white;
+  text-align: center;
+}
+
+#standings2 {
+  margin-left: 3rem;
+}
+
+#standings1 tr th:first-child,
+#standings1 tr td:first-child,
+#standings1 tr th:nth-child(4),
+#standings1 tr td:nth-child(4),
+#standings1 tr th:nth-child(5),
+#standings1 tr td:nth-child(5),
+#standings2 tr th:first-child,
+#standings2 tr td:first-child,
+#standings2 tr th:nth-child(3),
+#standings2 tr td:nth-child(3),
+#standings2 tr th:nth-child(4),
+#standings2 tr td:nth-child(4) {
+  width: 5rem;
+}
+
+#standings1 tr th:nth-child(2),
+#standings1 tr td:nth-child(2),
+#standings1 tr th:nth-child(3),
+#standings1 tr td:nth-child(3),
+#standings2 tr th:nth-child(2),
+#standings2 tr td:nth-child(2) {
+  width: 15rem;
+}
+
+/*script 2*/
+
+.head {
+  position: relative;
+  width: 100%;
+}
+
+.head h1 {
+  background-color: transparent;
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+}
+.stand {
+  box-shadow: -10px 0 30px, 10px 0 30px;
+  width: 70%;
+  min-width: 70%;
+  margin: auto;
+  padding-top: 1rem;
+  margin-bottom: 3rem;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  overflow: hidden;
+  padding-right: 2vh;
+  padding-left: 2vh;
+  background: linear-gradient(to bottom right, black, rgba(50, 42, 42, 1));
+}
+
+@media (max-width: 800px) {
+  nav ul li {
+    display: block;
+  }
+  nav ul {
+    margin-top: 0.3rem;
+    float: left;
+    overflow: visible;
+  }
+  nav button {
+    width: 6.5rem;
+    height: 1.3rem;
+  }
+
+  header div {
+    flex-direction: column;
+  }
+
+  header div[id="head"] {
+    flex-direction: row;
+  }
+
+  #tab-4-content {
+    padding-left: 5vh;
+  }
+  .head h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  nav {
+    margin-left: 0;
+  }
+
+  nav button {
+    width: 5rem;
+  }
+
+  .head h1 {
+    font-size: 1.3rem;
+  }
+}
